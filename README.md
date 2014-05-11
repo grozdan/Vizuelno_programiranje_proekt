@@ -37,38 +37,9 @@ Vizuelno_programiranje_proekt
 &emsp;<a href="http://imgur.com/r6uRonA"><img src="http://i.imgur.com/r6uRonA.png" title="Hosted by imgur.com" /></a>
 &emsp;Отвора нов диалог прозорец за избор на боја. По изборот и кликнување на копчето OK настанува промена на позадинската боја на апликацијата.<br><br>
 &emsp;<a href="http://imgur.com/WclUzXb"><img src="http://i.imgur.com/WclUzXb.png" title="Hosted by imgur.com" /></a><br><br>
-<xmp>
-Опис на методот PlaySong(Song song)
-private ISoundOut _soundOut;
-private Equalizer _eq;
-private void PlaySong(Song song)
-        {
-            Stop();
-            if (WasapiOut.IsSupportedOnCurrentPlatform)
-            {
-                _soundOut = new WasapiOut();
-            }
-            else
-            {
-                _soundOut = new DirectSoundOut();
-            }
-            var source = CodecFactory.Instance.GetCodec(song.FileName);
-            source = new LoopStream(source) { EnableLoop = false };
-            (source as LoopStream).StreamFinished += (s, args) => streamFinished(null, null);
-            isStreamFinished = false;
-            _eq = Equalizer.Create10BandEqualizer(source);
-            alertTrackBars();
-            lblSongName.Text = song.ToString();
-            lblSongName.Location = new Point(5, 149);
-            progressBar.Maximum = song.getDurationInSeconds();
-            progressBar.Value = 0;
-            _soundOut.Initialize(_eq.ToWaveSource(16));
-            _soundOut.Volume = (float)colorSliderVolume.Value / 100;
-            _soundOut.Play();
-            timer.Start();
-            timerSeconds.Start();
-        }
-</xmp>
+&emsp;<b>Опис на методот PlaySong(Song song)</b><br>
+&emsp;ISoundOut е интерфејс чиј изворен код го првземавме од http://cscore.codeplex.com/. Исто така и Equalizer е класа која работи со подесување на звукот со помош на баровите во средината на player-от, и е превземена од истото место. PlaySong(Song song) е најкористениот метод во нашата апликација, и се повикува при клик на различни копчиња. Тој ги иницијализира _soundOut и _eq. Потоа со помош на _soundOut може да се регулира пуштањето на песна, паузирањето, стопирањето итн. Со _eq се регулира equalizer - от. По иницијализацијата на овие клучни променливи, се пуштаат двата тајмери за исцртување на хармониците и за следење на текот на песната, соодветно.
+
 
 
 
