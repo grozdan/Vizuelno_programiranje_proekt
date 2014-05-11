@@ -12,13 +12,14 @@ Vizuelno_programiranje_proekt
 &emsp;<a href="http://imgur.com/h65ZW82"><img src="http://i.imgur.com/h65ZW82.png" title="Hosted by imgur.com" /></a>
 &emsp;<a href="http://imgur.com/rBOB9C9"><img src="http://i.imgur.com/rBOB9C9.png" title="Hosted by imgur.com" /></a><br><br>
 &emsp;За да се овозможи регулирање на висината на тонот додаден е уште еден слајдер со хоризонтална поставеност.<br>
-&emsp; &emsp;<a href="http://imgur.com/GkLHQ30"><img src="http://i.imgur.com/GkLHQ30.png" title="Hosted by imgur.com" /></a><br><br>
+&emsp;<a href="http://imgur.com/GkLHQ30"><img src="http://i.imgur.com/GkLHQ30.png" title="Hosted by imgur.com" /></a><br><br>
 &emsp;Името на тековната песна се прикажува во подвижна лабела која се придвижува од лево на десно. Тоа е овозможено преку Timer – от кој ја зголемува позицијата на горната лева точка на лабелата во однос на Х – оската на кратки временски интервали што за нас изледа како да се движи.<br><br>
 &emsp;<a href="http://imgur.com/ObxCU0D"><img src="http://i.imgur.com/ObxCU0D.png" title="Hosted by imgur.com" /></a><br><br>
 &emsp;Копчињата ги нудат основните функционалности како и во секој друг player. Сите заедно наследуваат од апстрактната класа ButtonShape која пак наследува од класата Button. На секое копче се додава различна слика која се менува на Hover за подобар ефект во моментот кога покажувачот се наоѓа над соодветното копче. Кога покажувачот ќе се тргне од површината на копчето, сликата се менува во претходно поставената.<br>
 &emsp;<a href="http://imgur.com/woFbyVe"><img src="http://i.imgur.com/woFbyVe.png" title="Hosted by imgur.com" /></a><br><br>
-
-
+&emsp;Play - При клик на ова копче, се стартува песната која е моментално селектирана во листата на песни. Исто така одредена песна може да се стартува и со двоен клик на неа, а исто нејзино селектирање и стискање на enter. Откако ќе отсвири крајната песна во листата, кружно започнува со свирење првата песна.<br><br>
+&emsp;<a href="http://imgur.com/s7oCqzb"><img src="http://i.imgur.com/s7oCqzb.png" title="Hosted by imgur.com" /></a><br><br>
+&emsp;Pause - Моменталната песна ја паузира. Со повторен клик на ова копче, песната продолжува од каде што застанала. 
 
 
 <br>121107, 121144, 121102
