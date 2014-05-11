@@ -32,5 +32,43 @@ Vizuelno_programiranje_proekt
 &emsp;Add song - Со клик на ова копче се отвора дијалог прозорец за одбирање на песна од диск. Може да се изберат и повеќе песни одеднаш. Откако ќе се изврши селекција, песните се додаваат во листата со песни. Исто така, додавањето на песни може да се изврши и со drag and drop.<br><br>
 &emsp;<a href="http://imgur.com/AEBvPIS"><img src="http://i.imgur.com/AEBvPIS.png" title="Hosted by imgur.com" /></a>
 &emsp;Remove - Селектираната песна се брише од листата. Меѓутоа таа не се запира и продолжува да свири. Може исто така и да се паузира иако е избришана од листата. Бришењето на песна може исто така да се направи и со селектирање на неа и со стискање на копчето delete од тастатура. <br><br>
+&emsp;<a href="http://imgur.com/9eIdFHb"><img src="http://i.imgur.com/9eIdFHb.png" title="Hosted by imgur.com" /></a>
+&emsp;Remove all - Ги брише сите песни од листата.<br><br>
+&emsp;<a href="http://imgur.com/r6uRonA"><img src="http://i.imgur.com/r6uRonA.png" title="Hosted by imgur.com" /></a>
+&emsp;Отвора нов диалог прозорец за избор на боја. По изборот и кликнување на копчето OK настанува промена на позадинската боја на апликацијата.<br><br>
+&emsp;<a href="http://imgur.com/WclUzXb"><img src="http://i.imgur.com/WclUzXb.png" title="Hosted by imgur.com" /></a><br><br>
+Опис на методот PlaySong(Song song)
+private ISoundOut _soundOut;
+private Equalizer _eq;
+private void PlaySong(Song song)
+        {
+            Stop();
+            if (WasapiOut.IsSupportedOnCurrentPlatform)
+            {
+                _soundOut = new WasapiOut();
+            }
+            else
+            {
+                _soundOut = new DirectSoundOut();
+            }
+            var source = CodecFactory.Instance.GetCodec(song.FileName);
+            source = new LoopStream(source) { EnableLoop = false };
+            (source as LoopStream).StreamFinished += (s, args) => streamFinished(null, null);
+            isStreamFinished = false;
+            _eq = Equalizer.Create10BandEqualizer(source);
+            alertTrackBars();
+            lblSongName.Text = song.ToString();
+            lblSongName.Location = new Point(5, 149);
+            progressBar.Maximum = song.getDurationInSeconds();
+            progressBar.Value = 0;
+            _soundOut.Initialize(_eq.ToWaveSource(16));
+            _soundOut.Volume = (float)colorSliderVolume.Value / 100;
+            _soundOut.Play();
+            timer.Start();
+            timerSeconds.Start();
+        }
+
+
+
 
 <br>121107, 121144, 121102
