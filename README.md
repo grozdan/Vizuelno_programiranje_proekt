@@ -14,7 +14,7 @@ Vizuelno_programiranje_proekt
 &emsp;За да се овозможи регулирање на висината на тонот додаден е уште еден слајдер со хоризонтална поставеност.
 &emsp;<a href="http://imgur.com/GkLHQ30"><img src="http://i.imgur.com/GkLHQ30.png" title="Hosted by imgur.com" /></a><br><br>
 &emsp;Името на тековната песна се прикажува во подвижна лабела која се придвижува од лево на десно. Тоа е овозможено преку Timer – от кој ја зголемува позицијата на горната лева точка на лабелата во однос на Х – оската на кратки временски интервали што за нас изледа како да се движи.<br>
-&emsp;<a href="http://imgur.com/ObxCU0D"><img src="http://i.imgur.com/ObxCU0D.png" title="Hosted by imgur.com" /></a><br><br>
+&emsp;&emsp;<a href="http://imgur.com/ObxCU0D"><img src="http://i.imgur.com/ObxCU0D.png" title="Hosted by imgur.com" /></a><br><br>
 &emsp;Копчињата ги нудат основните функционалности како и во секој друг player. Сите заедно наследуваат од апстрактната класа ButtonShape која пак наследува од класата Button. На секое копче се додава различна слика која се менува на Hover за подобар ефект во моментот кога покажувачот се наоѓа над соодветното копче. Кога покажувачот ќе се тргне од површината на копчето, сликата се менува во претходно поставената.<br>
 &emsp;<a href="http://imgur.com/woFbyVe"><img src="http://i.imgur.com/woFbyVe.png" title="Hosted by imgur.com" /></a><br><br>
 
