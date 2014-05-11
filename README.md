@@ -37,6 +37,7 @@ Vizuelno_programiranje_proekt
 &emsp;<a href="http://imgur.com/r6uRonA"><img src="http://i.imgur.com/r6uRonA.png" title="Hosted by imgur.com" /></a>
 &emsp;Отвора нов диалог прозорец за избор на боја. По изборот и кликнување на копчето OK настанува промена на позадинската боја на апликацијата.<br><br>
 &emsp;<a href="http://imgur.com/WclUzXb"><img src="http://i.imgur.com/WclUzXb.png" title="Hosted by imgur.com" /></a><br><br>
+<xmp>
 Опис на методот PlaySong(Song song)
 private ISoundOut _soundOut;
 private Equalizer _eq;
@@ -67,7 +68,7 @@ private void PlaySong(Song song)
             timer.Start();
             timerSeconds.Start();
         }
-
+</xmp>
 
 
 
