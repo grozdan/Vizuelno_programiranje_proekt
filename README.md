@@ -7,5 +7,10 @@ Vizuelno_programiranje_proekt
 &emsp;<a href="http://imgur.com/g16gaIs"><img src="http://i.imgur.com/g16gaIs.png" title="Hosted by imgur.com" /></a><br>
 &emsp;Со движење на Trackbar – овите (слајдерите) се прави промена во фрекфенцијата на звукот	 со што придонесува некои форми да бидат подоминантни. Со промена на нивната вредност се прави исцртување на крива линија која визуелно ни ја претставува состојбата во која се наоѓаат слајдерите. Секоја вредност на слајдерот претставува y – координата на точка во делот каде што се исцртува. Вкупно се 10 слајдери од кои се прави листа од 10 точки која служи за исцртување на кривата.<br>
 &emsp;<a href="http://imgur.com/Lro49FD"><img src="http://i.imgur.com/Lro49FD.png" title="Hosted by imgur.com" /></a>
-&emsp;<a href="http://imgur.com/HPksyii"><img src="http://i.imgur.com/HPksyii.png" title="Hosted by imgur.com" /></a>
+&emsp;<a href="http://imgur.com/HPksyii"><img src="http://i.imgur.com/HPksyii.png" title="Hosted by imgur.com" /></a><br>
+&emsp;Над делот во кој се исцртува кривата се прикажува времето на тековната песна. Тоа е овозможено со Timer кој што одбројува на секоја секунда и ја зголемува променливата во која се чуваат секундите, преку кое се добиваат во која минута и секунда е песната и притоа се прикажуваат во соодветниот Теxt box. Progress bar – от се користи за визулено да се претстави колку од вкупната должина на песната е помината и неговата вредност константно се зголемува за еден се до крајот на песната.<br>
+&emsp;<a href="http://imgur.com/h65ZW82"><img src="http://i.imgur.com/h65ZW82.png" title="Hosted by imgur.com" /></a>
+&emsp;<a href="http://imgur.com/rBOB9C9"><img src="http://i.imgur.com/rBOB9C9.png" title="Hosted by imgur.com" /></a><br>
+&emsp;За да се овозможи регулирање на висината на тонот додаден е уште еден слајдер со хоризонтална поставеност.
+&emps;<a href="http://imgur.com/GkLHQ30"><img src="http://i.imgur.com/GkLHQ30.png" title="Hosted by imgur.com" /></a>
 <br>121107, 121144, 121102
