@@ -45,7 +45,7 @@ Vizuelno_programiranje_proekt
 
 
 
-<br><br>Изработиле:<br>
+<br><br><b>Изработиле:</b><br>
 &emsp;Кирил Пеповски 121102<br>
 &emsp;Гроздан Маџаров 121107<br>
 &emsp;Ивица Обадиќ 121144<br>
